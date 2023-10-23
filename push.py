@@ -17,9 +17,9 @@ def quickPush():
     # repo.git.commit('-m', get_date_str())
     repo.git.commit('-m', 'Automatic commit')
 
-    # 推送到远程仓库的master分支
+    # 推送到远程仓库的main分支(github默认main，其他工具可能不同)
     origin = repo.remote(name='origin')
-    origin.push('master')
+    origin.push('main')
 
 
 if __name__ == "__main__":
