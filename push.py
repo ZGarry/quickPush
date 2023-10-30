@@ -1,8 +1,16 @@
+"""
+Git快速推送
+用法：在git仓库关联好之后，使用命令 'python push.py' 进行快速推送。将推送当前目录下，所有修改内容。
+地址：https://github.com/ZGarry/quickPush，欢迎点个Star
+"""
+
+
 def get_date_str():
     from datetime import datetime
     now = datetime.now()
     date_string = f"{now.year}-{now.month:02d}-{now.day:02d}"
     return date_string
+
 
 def quickPush():
     # 移动到当前目录
